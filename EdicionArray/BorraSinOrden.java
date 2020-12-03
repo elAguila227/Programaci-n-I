@@ -22,8 +22,7 @@ class BorraSinOrden{
     }
 
     static int lastElem(int[] arr, int i, int j, int m) {
-        System.out.println(i + " " + j + " " + m);
-        if (arr[j] != 0 || m >= j) {
+        if (arr[j] != 0 || i >= j) {
             return j;
         } if (arr[m] == 0) {
             return lastElem(arr, i, m-1, (i+m-1)/2);
